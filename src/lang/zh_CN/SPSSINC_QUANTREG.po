@@ -1,0 +1,67 @@
+#/***********************************************************************
+# * Licensed Materials - Property of IBM 
+# *
+# * IBM SPSS Products: Statistics Common
+# *
+# * (C) Copyright IBM Corp. 1989, 2014
+# *
+# * US Government Users Restricted Rights - Use, duplication or disclosure
+# * restricted by GSA ADP Schedule Contract with IBM Corp. 
+# ************************************************************************/
+
+# NLS_ENCODING=UTF-8
+# IBMUPYTH
+
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: SPSSINC_QUANTREG.R:102
+msgid "The R %s package is required but could not be loaded."
+msgstr ""
+"需要 R %s 程序包，但未能将其装入。"
+
+#: SPSSINC_QUANTREG.R:116
+msgid "ERROR:"
+msgstr ""
+"错误："
+
+#: SPSSINC_QUANTREG.R:121
+msgid "Quantile Regression"
+msgstr ""
+"分位数回归"
+
+#: SPSSINC_QUANTREG.R:131
+msgid "Coefficients, quantile = %s"
+msgstr ""
+"系数，分位数 = %s"
+
+#: SPSSINC_QUANTREG.R:140
+msgid "Case Number"
+msgstr ""
+"个案号"
+
+#: SPSSINC_QUANTREG.R:143
+#: SPSSINC_QUANTREG.R:165
+msgid "tau = %s"
+msgstr ""
+"tau = %s"
+
+#: SPSSINC_QUANTREG.R:157
+msgid "Failed to create residuals dataset. Dataset name must not already exist: "
+msgstr ""
+"创建残差数据集失败。数据集名称不得已存在："
+
+#: SPSSINC_QUANTREG.R:162
+msgid "Variable or Factor Level"
+msgstr ""
+"变量或因子级别"
+
+#: SPSSINC_QUANTREG.R:178
+msgid "Failed to create coefficients dataset. Dataset name must not already exist: "
+msgstr ""
+"创建系数数据集失败。数据集名称不得已存在："
+
+
