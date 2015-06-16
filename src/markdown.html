@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=9" >
+
+<title>SPSSINC QUANTREG Extension Command</title>
+
+<link rel="stylesheet" type="text/css" href="extsyntax.css" />
+
+
+
+
+
+</head>
+
+<body>
+<h1>SPSSINC QUANTREG Extension Command</h1>
+
+<p>Calculate quantile regression</p>
+<div class="syntax">
+<p>SPSSINC QUANTREG DEPENDENT=<em>dependent variable</em><sup>&#42;</sup><br/>
+ENTER=<em>independent variables</em><sup>&#42;</sup> QUANTILES=<em>list of quantiles</em>  </p>
+
+<p>/OPTIONS MISSING=LISTWISE<sup>&#42;&#42;</sup> or FAIL<br/>
+METHOD=BR<sup>&#42;&#42;</sup> or FN or PFM<br/>
+STDERR=RANK<sup>&#42;&#42;</sup> or IID or NID or KER or BOOT<br/>
+PLOT<br/>
+EXECUTE=TRUE<sup>&#42;&#42;</sup> or FALSE  </p>
+
+<p>/SAVE RESIDUALSDATASET=<em>datasetname</em> COEFSDATASET=<em>datasetname</em><br/>
+PROGRAMFILE=&ldquo;<em>filespec</em>&rdquo;  </p>
+
+<p><sup>&#42;</sup> Required<br/>
+<sup>&#42;&#42;</sup> Default</p>
+</div>
+<p>SPSSINC QUANTREG /HELP prints this information and does nothing else.</p>
+
+<pre class="example"><code>SPSSINC QUANTREG DEPENDENT=mpg ENTER=engine weight.
+</code></pre>
+
+<p>Split files and weight are not honored by this command.</p>
+
+<p><strong>DEPENDENT</strong> and <strong>ENTER</strong> specify the dependent and independent
+variable names.
+Categorical independent variables are automatically converted
+appropriately to factors.  A constant term is automatically included.</p>
+
+<p><strong>QUANTILES</strong> is a list of quantiles with values between 0 and 1.  The quantile
+regression is performed for each value.  The default is .5</p>
+
+<h2>OPTIONS</h2>
+
+<p><strong>MISSING</strong>=LISTWISE causes listwise deletion of missing values (but
+missings in factors are included as a level).  FAIL stops the procedure if
+missing values are encountered.</p>
+
+<p><strong>METHOD</strong> specifies the computational algorithm.</p>
+
+<ul>
+<li>BR is Barrodale and Roberts, recommended for up to several thousand cases.</li>
+<li>FN is Frisch-Newton, recommended for large problems.</li>
+<li>PFN is Frisch-Newton after preprocessing, recommended for very large problems.</li>
+</ul>
+
+<p><strong>STDERR</strong> specifies how to compute coefficient standard errors.</p>
+
+<ul>
+<li>RANK specifies confidence intervals by inverting a rank test</li>
+<li>IID assumes iid errors and computes asymptotic estimates</li>
+<li>NID computes a Huber sandwich estimate</li>
+<li>KER uses a kernel estimate</li>
+<li>BOOT computes a bootstrapped estimator</li>
+</ul>
+
+<p>Details can be found in the R help for rq.</p>
+
+<p><strong>PLOT</strong> causes each coefficient value to be plotted against the specified quantile
+values if there is more than one quantile.</p>
+
+<p><strong>EXECUTE</strong>=FALSE runs the command syntax without running the quantile regression.<br/>
+This is mainly useful in combination with SAVE PROGRAMFILE.</p>
+
+<h2>SAVE</h2>
+
+<p><strong>RESIDUALSDATASET</strong> causes a  dataset containing the residuals to be created.
+The name must not already be in use.
+The case number is included as cases will only be written for input cases with no
+missing data.  A variable is created for each regression.</p>
+
+<p><strong>COEFSDATASET</strong> causes a dataset containing the coefficients to be created.
+The name must not already be in use.
+A variable is created for each regression.</p>
+
+<p><strong>PROGRAMFILE</strong> causes the R code that implements the quantile regression to be 
+written to the specified file.  Since the rq function has features not exposed
+in this extension command, the generated program can be a useful starting point 
+for additional specifications.</p>
+
+<p>&copy; Copyright IBM Corp. 1989, 2014</p>
+
+</body>
+
+</html>
+
