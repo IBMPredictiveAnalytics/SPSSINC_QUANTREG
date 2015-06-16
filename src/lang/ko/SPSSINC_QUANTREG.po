@@ -1,0 +1,67 @@
+#/***********************************************************************
+# * Licensed Materials - Property of IBM 
+# *
+# * IBM SPSS Products: Statistics Common
+# *
+# * (C) Copyright IBM Corp. 1989, 2014
+# *
+# * US Government Users Restricted Rights - Use, duplication or disclosure
+# * restricted by GSA ADP Schedule Contract with IBM Corp. 
+# ************************************************************************/
+
+# NLS_ENCODING=UTF-8
+# IBMUPYTH
+
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: SPSSINC_QUANTREG.R:102
+msgid "The R %s package is required but could not be loaded."
+msgstr ""
+"R %s 패키지가 필요하지만 로드할 수 없습니다."
+
+#: SPSSINC_QUANTREG.R:116
+msgid "ERROR:"
+msgstr ""
+"오차:"
+
+#: SPSSINC_QUANTREG.R:121
+msgid "Quantile Regression"
+msgstr ""
+"분위수 회귀"
+
+#: SPSSINC_QUANTREG.R:131
+msgid "Coefficients, quantile = %s"
+msgstr ""
+"계수, 분위수 = %s"
+
+#: SPSSINC_QUANTREG.R:140
+msgid "Case Number"
+msgstr ""
+"케이스 번호"
+
+#: SPSSINC_QUANTREG.R:143
+#: SPSSINC_QUANTREG.R:165
+msgid "tau = %s"
+msgstr ""
+"tau = %s"
+
+#: SPSSINC_QUANTREG.R:157
+msgid "Failed to create residuals dataset. Dataset name must not already exist: "
+msgstr ""
+"잔차 데이터 세트를 작성하지 못했습니다.  데이터 세트 이름이 미리 존재하지 않아야 합니다."
+
+#: SPSSINC_QUANTREG.R:162
+msgid "Variable or Factor Level"
+msgstr ""
+"변수 또는 요인 수준"
+
+#: SPSSINC_QUANTREG.R:178
+msgid "Failed to create coefficients dataset. Dataset name must not already exist: "
+msgstr ""
+"계수 데이터 세트를 작성하지 못했습니다.  데이터 세트 이름이 미리 존재하지 않아야 합니다."
+
+
