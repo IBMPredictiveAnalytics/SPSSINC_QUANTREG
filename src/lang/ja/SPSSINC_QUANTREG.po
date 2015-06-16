@@ -1,0 +1,67 @@
+#/***********************************************************************
+# * Licensed Materials - Property of IBM 
+# *
+# * IBM SPSS Products: Statistics Common
+# *
+# * (C) Copyright IBM Corp. 1989, 2014
+# *
+# * US Government Users Restricted Rights - Use, duplication or disclosure
+# * restricted by GSA ADP Schedule Contract with IBM Corp. 
+# ************************************************************************/
+
+# NLS_ENCODING=UTF-8
+# IBMUPYTH
+
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: SPSSINC_QUANTREG.R:102
+msgid "The R %s package is required but could not be loaded."
+msgstr ""
+"R %s パッケージが必要ですが、読み込むことができませんでした。"
+
+#: SPSSINC_QUANTREG.R:116
+msgid "ERROR:"
+msgstr ""
+"誤差"
+
+#: SPSSINC_QUANTREG.R:121
+msgid "Quantile Regression"
+msgstr ""
+"分位の残差"
+
+#: SPSSINC_QUANTREG.R:131
+msgid "Coefficients, quantile = %s"
+msgstr ""
+"係数、分位 = %s"
+
+#: SPSSINC_QUANTREG.R:140
+msgid "Case Number"
+msgstr ""
+"ケース番号"
+
+#: SPSSINC_QUANTREG.R:143
+#: SPSSINC_QUANTREG.R:165
+msgid "tau = %s"
+msgstr ""
+"tau = %s"
+
+#: SPSSINC_QUANTREG.R:157
+msgid "Failed to create residuals dataset. Dataset name must not already exist: "
+msgstr ""
+"残差データセットを作成できませんでした。  データセット名は事前に存在してはいけません。"
+
+#: SPSSINC_QUANTREG.R:162
+msgid "Variable or Factor Level"
+msgstr ""
+"変数またはファクタ レベル"
+
+#: SPSSINC_QUANTREG.R:178
+msgid "Failed to create coefficients dataset. Dataset name must not already exist: "
+msgstr ""
+"係数データセットを作成できませんでした。  データセット名は事前に存在してはいけません。"
+
+
