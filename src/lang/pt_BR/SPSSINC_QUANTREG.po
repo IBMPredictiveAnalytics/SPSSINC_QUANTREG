@@ -1,0 +1,67 @@
+#/***********************************************************************
+# * Licensed Materials - Property of IBM 
+# *
+# * IBM SPSS Products: Statistics Common
+# *
+# * (C) Copyright IBM Corp. 1989, 2014
+# *
+# * US Government Users Restricted Rights - Use, duplication or disclosure
+# * restricted by GSA ADP Schedule Contract with IBM Corp. 
+# ************************************************************************/
+
+# NLS_ENCODING=UTF-8
+# IBMUPYTH
+
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: SPSSINC_QUANTREG.R:102
+msgid "The R %s package is required but could not be loaded."
+msgstr ""
+"O pacote R %s é necessário, mas não pôde ser carregado."
+
+#: SPSSINC_QUANTREG.R:116
+msgid "ERROR:"
+msgstr ""
+"ERRO:"
+
+#: SPSSINC_QUANTREG.R:121
+msgid "Quantile Regression"
+msgstr ""
+"Regressão de quantil"
+
+#: SPSSINC_QUANTREG.R:131
+msgid "Coefficients, quantile = %s"
+msgstr ""
+"Coeficientes, quantil = %s"
+
+#: SPSSINC_QUANTREG.R:140
+msgid "Case Number"
+msgstr ""
+"Número do caso"
+
+#: SPSSINC_QUANTREG.R:143
+#: SPSSINC_QUANTREG.R:165
+msgid "tau = %s"
+msgstr ""
+"tau = %s"
+
+#: SPSSINC_QUANTREG.R:157
+msgid "Failed to create residuals dataset. Dataset name must not already exist: "
+msgstr ""
+"Falha ao criar um conjunto de dados de resíduos. O nome do conjunto de dados ainda não deve existir: "
+
+#: SPSSINC_QUANTREG.R:162
+msgid "Variable or Factor Level"
+msgstr ""
+"Nível da variável ou do fator"
+
+#: SPSSINC_QUANTREG.R:178
+msgid "Failed to create coefficients dataset. Dataset name must not already exist: "
+msgstr ""
+"Falha ao criar o conjunto de dados de coeficientes. O nome do conjunto de dados ainda não deve existir: "
+
+
