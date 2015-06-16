@@ -1,0 +1,48 @@
+
+<!-- ***************************************************************** -->
+<!--                                                                   -->
+<!-- Licensed Materials - Property of IBM                              -->
+<!--                                                                   -->
+<!-- IBM SPSS Products: Statistics Common                              -->
+<!--                                                                   -->
+<!-- (C) Copyright IBM Corp. 1989, 2011                                -->
+<!--                                                                   -->
+<!-- US Government Users Restricted Rights - Use, duplication or       -->
+<!-- disclosure restricted by GSA ADP Schedule Contract with IBM       -->
+<!-- Corp.                                                             -->
+<!--                                                                   -->
+<!-- ***************************************************************** -->
+
+<Command xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="extension.xsd" Name="SPSSINC QUANTREG" Language="R" Mode="Source">
+	<Subcommand Name="" IsArbitrary="False" Occurrence="Optional">
+		<Parameter Name="DEPENDENT" ParameterType="VariableName"/>
+		<Parameter Name="ENTER" ParameterType="VariableNameList"/>
+		<Parameter Name="QUANTILES" ParameterType="NumberList"/>
+	</Subcommand>
+	<Subcommand Name="OPTIONS">
+		<Parameter Name="MISSING" ParameterType="Keyword">
+			<EnumValue Name="LISTWISE"/>
+			<EnumValue Name="FAIL"/>
+		</Parameter>
+		<Parameter Name="METHOD" ParameterType="Keyword">
+			<EnumValue Name="BR"/>
+			<EnumValue Name="FN"/>
+			<EnumValue Name="PFN"/>
+		</Parameter>
+		<Parameter Name="STDERR" ParameterType="Keyword">
+			<EnumValue Name="RANK"/>
+			<EnumValue Name="IID"/>
+			<EnumValue Name="NID"/>
+			<EnumValue Name="KER"/>
+			<EnumValue Name="BOOT"/>
+		</Parameter>
+		<Parameter Name="PLOT" ParameterType="LeadingToken"/>
+		<Parameter Name="EXECUTE" ParameterType="Keyword"/>
+	</Subcommand>
+	<Subcommand Name="SAVE" Occurrence="Optional">
+		<Parameter Name="RESIDUALSDATASET" ParameterType="DatasetName"/>
+		<Parameter Name="COEFSDATASET" ParameterType="DatasetName"/>
+		<Parameter Name="PROGRAMFILE" ParameterType="OutputFile"/>
+	</Subcommand>
+	<Subcommand Name="HELP" Occurrence="Optional"/>
+</Command>
