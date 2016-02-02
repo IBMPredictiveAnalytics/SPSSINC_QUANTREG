@@ -1,11 +1,13 @@
 # SPSSINC QUANTREG
 ## Estimate one or more conditional quantiles for a linear model.
- This procedure estimates one or more conditional quantile  s (0 <= q <= 1) for a linear model, using the rq function from the R   quantreg package. In contrast, ordinary regression estimates the cond  itional mean. The procedure allows you to choose the estimation algor  ithm as well as the method for estimating the standard error. You can   save both the residuals from the regression and the estimated coeffi  cients.
+ This procedure estimates one or more conditional quantile  s (0 <= q <= 1) for a linear model. In contrast, ordinary regression estimates the conditional mean. The procedure allows you to choose the estimation algorithm as well as the method for estimating the standard error. You can save both the residuals from the regression and the estimated coefficients.
 
 ---
 Requirements
 ----
-- IBM SPSS Statistics 18 or later
+- IBM SPSS Statistics 18 or later and the corresponding IBM SPSS Statistics-Integration Plug-in for R.
+
+Note: The SPSSINC QUANTREG extension is installed as part of IBM SPSS Statistics-Essentials for R.
 
 ---
 Installation intructions
